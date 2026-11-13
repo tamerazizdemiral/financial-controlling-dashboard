@@ -1,4 +1,14 @@
+# macOS
 .DS_Store
+
+# Python
 __pycache__/
-.venv/
 *.pyc
+
+# Virtuelle Umgebungen
+.venv/
+venv/
+
+# Umgebungsvariablen und Zugangsdaten
+.env
+.streamlit/secrets.toml
