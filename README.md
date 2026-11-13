@@ -1,179 +1,201 @@
 
-# Financial Performance & Controlling Dashboard
+# Financial Controlling Dashboard
 
-An interactive financial controlling dashboard built with **Python, Streamlit, Pandas, and Plotly**.
+**Interactive financial performance analysis using Python, Streamlit, Pandas and Plotly.**
 
-This portfolio project demonstrates how financial data can be analyzed, visualized, and transformed into actionable management insights.
+A self-developed portfolio project combining financial controlling, data analytics and interactive business intelligence.
 
-The application combines financial KPI monitoring, budget variance analysis, product profitability assessment, and automated controlling insights in an interactive dashboard.
+The dashboard analyzes revenue, costs, operating profitability and budget deviations using synthetic financial data for 2024 and 2025.
 
 ## Dashboard Preview
 
-### 1. Financial Overview
+### Financial Overview
 
-Overview of key financial performance indicators, including revenue, costs, operating profit, operating margin, and budget deviations.
+Key financial indicators including revenue, costs, operating profit, operating margin and budget deviations.
 
 ![Financial Overview](screenshots/01-financial-overview.png)
 
-### 2. Monthly Revenue Development
+### Monthly Revenue Analysis
 
-Interactive comparison of actual revenue and budgeted revenue throughout the selected business year.
+Comparison of actual and budgeted revenue throughout the selected financial year.
 
-![Monthly Revenue Development](screenshots/02-monthly-revenue.png)
+![Monthly Revenue](screenshots/02-monthly-revenue.png)
 
-### 3. Cost Center & Product Profitability Analysis
+### Cost Center & Product Profitability
 
-Identification of cost center budget deviations and comparison of operating profit across products.
+Analysis of cost center budget deviations and operating profit by product.
 
 ![Cost Center and Product Analysis](screenshots/03-cost-center-product-analysis.png)
 
-### 4. Year-over-Year Comparison
+### Year-over-Year Performance
 
-Comparison of financial performance between 2024 and 2025, including revenue, costs, operating profit, and growth rates.
+Comparison of revenue, costs, operating profit and operating margins between 2024 and 2025.
 
 ![Year-over-Year Comparison](screenshots/04-year-over-year.png)
 
-### 5. Automated Controlling Insights
+### Automated Controlling Insights
 
-Rule-based interpretation of financial performance, highlighting revenue growth, cost developments, and changes in operating margins.
+Rule-based financial interpretations highlighting revenue trends, cost developments and changes in profitability.
 
-![Automated Controlling Insights](screenshots/05-controlling-insights.png)
+![Controlling Insights](screenshots/05-controlling-insights.png)
 
 ---
 
-## Project Overview
+## Project Objectives
 
-The Financial Performance & Controlling Dashboard is a Python-based business intelligence application designed to support financial analysis and management decision-making.
+The objective of this project is to demonstrate how financial data can be processed and transformed into relevant information for management decision-making.
 
-The dashboard enables users to:
+The dashboard addresses five central controlling questions:
 
-- Monitor financial performance through interactive KPI cards.
-- Compare actual financial results against budget targets.
-- Identify budget overruns and cost savings.
-- Evaluate product profitability.
-- Analyze financial developments across business years.
-- Generate automated insights based on financial KPIs.
-
-Users can filter the dashboard by business year, cost center, and product.
-
-The project demonstrates the practical application of financial controlling, data analytics, and business intelligence concepts.
+1. How is the company performing financially?
+2. Are actual results meeting budget expectations?
+3. Which cost centers exceed their planned budgets?
+4. How profitable are individual products?
+5. How has financial performance developed compared with the previous year?
 
 ## Key Features
 
-### Financial KPI Monitoring
+### Financial Performance Monitoring
 
-The dashboard calculates and displays four central financial indicators:
+Interactive KPI cards displaying:
 
-- **Revenue:** Total revenue generated during the selected period.
-- **Costs:** Total costs incurred during the selected period.
-- **Operating Profit:** Revenue minus recorded costs.
-- **Operating Margin:** Operating profit expressed as a percentage of revenue.
+- Revenue
+- Costs
+- Operating Profit
+- Operating Margin
 
 ### Budget vs. Actual Analysis
 
-Comparison of planned and actual financial performance:
+Comparison of planned and actual financial performance, including:
 
 - Revenue variance
 - Cost variance
 - Operating profit variance
-- Monthly revenue development
-- Identification of budget deviations
+- Monthly actual vs. budget revenue development
+
+**Variance interpretation:**
+
+All absolute variances are calculated as Actual minus Budget.
+
+- **Revenue variance:** Positive values indicate revenue above budget and are generally favorable.
+- **Cost variance:** Positive values indicate costs above budget and are generally unfavorable.
+- **Operating profit variance:** Positive values indicate operating profit above budget and are generally favorable.
+
+This distinction is reflected in the dashboard's KPI indicators and cost center analysis.
 
 ### Cost Center Analysis
 
-The dashboard evaluates cost performance across four cost centers.
+- Comparison of actual and budgeted costs
+- Identification of budget overruns and savings
+- Visualization of cost variances by cost center
 
-Features include:
+### Product Profitability
 
-- Comparison of actual costs against budgeted costs
-- Identification of budget overruns
-- Visualization of cost savings
-- Interactive cost center filtering
-
-### Product Profitability Analysis
-
-Analysis of operating profit across three products.
-
-The dashboard provides:
-
-- Product-level revenue and cost aggregation
-- Operating profit calculation by product
-- Profitability comparison
-- Interactive product filtering
+- Aggregation of revenue and costs by product
+- Calculation of operating profit and operating margin
+- Comparison of product profitability
 
 ### Year-over-Year Analysis
-
-Financial performance comparison between 2024 and 2025.
-
-The analysis includes:
 
 - Revenue growth
 - Cost development
 - Operating profit growth
-- Operating margin comparison
-- Percentage and absolute changes
+- Operating margin changes
 
-### Automated Controlling Insights
+The year-over-year comparison covers 2024 and 2025 and responds to the selected cost centers and products.
 
-The application automatically evaluates selected financial indicators and generates rule-based management insights.
+### Rule-Based Controlling Insights
 
-Examples include:
+The dashboard generates automated interpretations based on predefined financial rules.
 
-- Identification of revenue growth or decline
-- Detection of increasing or decreasing costs
-- Evaluation of operating margin improvements
-- Identification of deteriorating profitability
+These include:
 
-These insights automatically adjust to the selected cost centers and products.
+- Revenue growth or decline
+- Increasing or decreasing costs
+- Improving or deteriorating operating margins
 
-### Data Quality & Validation
+**The insights are rule-based and do not use artificial intelligence or machine learning.**
 
-The dashboard includes several automated data validation mechanisms:
+### Data Validation
 
-- Missing value detection
-- Duplicate record detection
-- Validation of financial data types
-- Consistency checks between actual and budget datasets
+Automated checks include:
+
+- Missing values and duplicate records
+- Invalid financial values
+- Duplicate combinations of month, cost center and product
+- Consistency between actual and budget datasets
 - Detection of negative financial values
-- Calculation consistency checks
+- Mathematical consistency of financial calculations
 
-These mechanisms support data reliability and help identify potential inconsistencies before financial analysis.
+## Example Financial Results
+
+The following results are based on the complete synthetic dataset for 2025, without additional cost center or product filters.
+
+| Financial KPI | 2025 Result |
+|---|---:|
+| Revenue | €1,576,759 |
+| Costs | €1,082,477 |
+| Operating Profit | €494,282 |
+| Operating Margin | 31.35% |
+| Revenue Growth vs. 2024 | +6.69% |
+| Cost Growth vs. 2024 | +6.54% |
+| Operating Profit Growth vs. 2024 | +7.02% |
+
+### Management Interpretation
+
+Financial performance improved compared with the previous year.
+
+Revenue increased by 6.69%, while operating profit grew by 7.02%. The operating margin also improved slightly.
+
+However, the budget comparison reveals a different perspective:
+
+- Actual revenue was approximately €41,412 below budget.
+- Actual costs were approximately €1,697 below budget.
+- Operating profit was approximately €39,715 below budget.
+
+Although the company achieved year-over-year growth, it did not meet its planned operating profit target.
+
+**Key takeaway:** Positive historical growth does not necessarily imply satisfactory budget performance. Both perspectives are essential for effective financial controlling.
+
+All results are illustrative and based exclusively on synthetic data.
 
 ## Technology Stack
 
-| Technology | Purpose |
+| Technology | Application |
 |---|---|
-| Python | Financial calculations and application logic |
-| Pandas | Data processing, filtering, and aggregation |
-| Streamlit | Interactive web dashboard |
+| Python | Application logic and financial calculations |
+| Pandas | Data processing, filtering and aggregation |
+| Streamlit | Interactive dashboard interface |
 | Plotly | Interactive financial visualizations |
 | Git | Version control |
-| GitHub | Source code hosting and documentation |
+| GitHub | Project hosting and documentation |
 
-## Dataset
+## Data Model
 
-All financial data used in this project is **synthetic**.
+The dashboard uses CSV-based financial datasets.
 
-The dataset is generated reproducibly using `scripts/generate_data.py` with a fixed random seed.
+The data covers:
 
-It includes:
-
-- Financial records for 2024 and 2025
+- Two financial years: 2024 and 2025
 - Four cost centers
 - Three products
-- Monthly actual and budget figures
-- Revenue and cost information
+- Monthly financial records
+- Actual and budgeted revenue and costs
 
 ### Data Files
 
 | File | Description |
 |---|---|
 | `actuals.csv` | Actual revenue and costs |
-| `budget.csv` | Planned revenue and costs |
+| `budget.csv` | Budgeted revenue and costs |
 | `cost_centers.csv` | Cost center reference data |
 | `products.csv` | Product reference data |
 
-Each financial record represents a combination of month, cost center, and product.
+Each financial record represents one combination of month, cost center and product.
+
+Actual and budget datasets are validated against matching combinations of these dimensions.
+
+All data is generated synthetically using `scripts/generate_data.py` with a fixed random seed.
 
 ## Financial Calculations
 
@@ -199,40 +221,14 @@ Operating Profit Variance = Actual Operating Profit - Budget Operating Profit
 
 ### Year-over-Year Growth
 
-Growth Rate = ((Current Year - Previous Year) / Previous Year) × 100
+Growth Rate = ((Current Value - Previous Value) / Previous Value) × 100
 
-**Note:** Operating profit is calculated using the revenue and costs included in the synthetic dataset. It represents a simplified financial performance measure and should not be interpreted as formally reported EBIT.
-
-## Example Financial Insights
-
-Based on the complete synthetic dataset for 2025:
-
-| Financial KPI | Result |
-|---|---:|
-| Revenue | €1,576,759 |
-| Costs | €1,082,477 |
-| Operating Profit | €494,282 |
-| Operating Margin | 31.35% |
-| Revenue Growth vs. 2024 | +6.69% |
-| Cost Growth vs. 2024 | +6.54% |
-| Operating Profit Growth vs. 2024 | +7.02% |
-
-### Management Interpretation
-
-The synthetic financial data indicates positive year-over-year performance in 2025.
-
-Revenue increased by approximately 6.69%, while operating profit increased by approximately 7.02%.
-
-However, actual revenue remained approximately €41,412 below budget, resulting in an operating profit shortfall of approximately €39,715 compared with planned performance.
-
-This illustrates why financial controlling requires both historical performance comparisons and budget variance analysis.
-
-These results are illustrative and do not represent the performance of a real company.
+**Accounting limitation:** Operating profit is calculated using the revenue and cost categories available in the synthetic dataset. It is a simplified profitability measure and should not be interpreted as formally reported EBIT.
 
 ## Project Structure
 
 ```text
-financial-controlling-starter/
+financial-controlling-dashboard/
 ├── app.py
 ├── README.md
 ├── requirements.txt
@@ -254,91 +250,81 @@ financial-controlling-starter/
     └── 05-controlling-insights.png
 ```
 
-## How to Run the Dashboard
+## Installation and Usage
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/tamerazizdemiral/financial-controlling-powerbi.git
-```
-
-### 2. Navigate to the Project Directory
+### 1. Clone the repository
 
 ```bash
-cd financial-controlling-powerbi
+git clone https://github.com/tamerazizdemiral/financial-controlling-dashboard.git
 ```
 
-### 3. Create a Virtual Environment
+### 2. Navigate to the project
+
+```bash
+cd financial-controlling-dashboard
+```
+
+### 3. Create a virtual environment
 
 ```bash
 python3 -m venv .venv
 ```
 
-### 4. Activate the Virtual Environment
+### 4. Activate the environment
 
-On macOS or Linux:
+macOS / Linux:
 
 ```bash
 source .venv/bin/activate
 ```
 
-On Windows:
+Windows:
 
-```bash
-.venv\Scripts\activate
+```powershell
+.venv\Scripts\Activate.ps1
 ```
 
-### 5. Install Dependencies
+### 5. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6. Launch the Dashboard
+### 6. Run the dashboard
 
 ```bash
 streamlit run app.py
 ```
 
-The dashboard will open in your web browser.
+The application will launch locally in your web browser.
 
-## Business Value
+## Limitations and Future Improvements
 
-This project demonstrates how financial data analytics can support business decision-making through:
+The project currently uses synthetic financial data and a CSV-based data structure.
 
-- **Financial Transparency:** Clear monitoring of revenue, costs, and profitability.
-- **Budget Control:** Identification of deviations between planned and actual results.
-- **Cost Management:** Evaluation of cost center performance.
-- **Profitability Analysis:** Assessment of operating profit across products.
-- **Performance Monitoring:** Comparison of financial results over time.
-- **Automated Insights:** Rule-based interpretation of financial developments.
+Potential future extensions include:
 
-The dashboard combines technical implementation with business-oriented financial analysis.
-
-## Future Improvements
-
-Potential extensions include:
-
-- Integration of external financial data sources
-- Financial forecasting and scenario analysis
-- Additional controlling KPIs
-- Automated reporting and data export
-- More advanced variance analysis
-- Online deployment using Streamlit Community Cloud
+- Integration with financial databases or ERP systems
+- Additional financial KPIs
+- Forecasting and scenario analysis
+- Automated reporting and export functionality
+- More detailed variance analysis
+- Automated software testing
 
 ## Data Privacy
 
-This project uses exclusively artificially generated financial data for educational and portfolio purposes.
+This project uses exclusively synthetic financial data.
 
-No confidential company, customer, or internship information is included.
+No confidential company, customer or internship information is included.
 
 ## Project Purpose
 
-This project was developed as an independent portfolio project to demonstrate practical skills in:
+This independent portfolio project demonstrates the practical application of:
 
 - Financial Controlling
 - Business Intelligence
-- Data Analytics
+- Financial Data Analysis
 - Python Programming
-- Financial Data Visualization
+- Data Visualization
+- Data Quality Validation
 - Data-Driven Decision-Making
